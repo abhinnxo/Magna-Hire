@@ -62,6 +62,7 @@
   <!-- mid content -->
   <section class="md:flex">
     <div class="md:w-1/2 flex items-center flex-1 md:h-[100vh] max-md:pb-12 max-md:pt-28 bg-blue-500">
+      <!-- Left Side Text -->
       <div class="w-fit h-fit mx-auto container">
         <h1 class="font-bold text-4xl mb-2 text-white">
           Your next best hire is a few clicks away!
@@ -78,6 +79,7 @@
         <p class="mb-2 text-xl text-white">💯 #1 firm for associate hiring in India</p>
       </div>
     </div>
+    <!-- Right Side Form -->
     <div class="md:w-1/2 flex flex-col items-center justify-center flex-1 md:h-[100vh] max-md:py-12 container">
       <h1 class="font-bold text-4xl mb-2">
         Are you a college or university?
@@ -89,36 +91,37 @@
         <br>
         for freshers and alumni - all for free!
       </h2>
-      <form class="max-md:w-full mx-auto">
+      <form class="max-md:w-full mx-auto" action="https://formspree.io/f/mgegwdbw" method="POST">
         <div class="relative z-0 w-full mb-5 group">
-          <input type="text" name="floating_textl" id="floating_text"
+          <input type="text" name="Name" id="floating_text"
             class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" " required />
-          <label for="floating_text"
-            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
+          <label for="Name"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:furfle peer-focus:dark:furfle peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
         </div>
         <div class="relative z-0 w-full mb-5 group">
-          <input type="email" name="floating_email" id="floating_email"
+          <input type="email" name="Email" id="floating_email"
             class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" " required />
-          <label for="floating_email"
+          <label for="Email"
             class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
             address</label>
         </div>
         <div class="relative z-0 w-full mb-5 group">
-          <input type="text" name="floating_company" id="floating_company"
+          <input type="text" name="Country" id="Country"
             class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" " required />
-          <label for="floating_company"
+          <label for="Country"
             class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company
             / Institute</label>
         </div>
+
         <div class="grid md:grid-cols-2 md:gap-6">
           <div class="relative z-0 w-full mb-5 group">
-            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone"
+            <input type="tel" name="Phone_Number" id="floating_phone"
               class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               placeholder=" " required />
-            <label for="floating_phone"
+            <label for="Phone_Number"
               class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Conatct
               Number</label>
           </div>
@@ -135,89 +138,6 @@
       </form>
     </div>
   </section>
-  <!-- Footer -->
-  <!-- <div class="footer-area section-padding-80-0 mb-14">
-    <div class="main-footer-area">
-      <div class="container">
-        <div class="flex justify-between">
-          <div class="w-1/4">
-            <div class="single-footer-widget">
-              <h5 class="widget-title">Products</h5>
-              <ul class="footer-nav">
-                <li><a href="#">Shared hosting</a></li>
-                <li><a href="#">WordPress hosting</a></li>
-                <li><a href="#">Vps hosting</a></li>
-                <li><a href="#">Dedicated hosting</a></li>
-                <li><a href="#">Reseller hosting</a></li>
-                <li><a href="#">Hosting features</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-1/4">
-            <div class="single-footer-widget">
-              <h5 class="widget-title">Programs</h5>
-              <ul class="footer-nav">
-                <li><a href="#">WordPress</a></li>
-                <li><a href="#">Affiliates</a></li>
-                <li><a href="#">Marketing services</a></li>
-                <li><a href="#">WordPress guide</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Awards &amp; Reviews</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-1/4">
-            <div class="single-footer-widget">
-              <h5 class="widget-title">Products</h5>
-              <ul class="footer-nav">
-                <li><a href="#">Shared hosting</a></li>
-                <li><a href="#">WordPress hosting</a></li>
-                <li><a href="#">Vps hosting</a></li>
-                <li><a href="#">Dedicated hosting</a></li>
-                <li><a href="#">Reseller hosting</a></li>
-                <li><a href="#">Hosting features</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-1/4">
-            <div class="single-footer-widget">
-              <h5 class="widget-title">Company</h5>
-              <ul class="footer-nav">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-1/2">
-            <div class="single-footer-widget">
-              <h5 class="widget-title">Subscribe Newsletter</h5>
-              <p>
-                Subscribe to our email newsletter for useful tips and valuable
-                resources.
-              </p>
-              <form action="index.html" class="nl-form">
-                <input class="form-control" placeholder="Your Mail" type="email" />
-                <button type="submit">
-                  <i aria-hidden="true" class="fa fa-paper-plane"></i>
-                </button>
-              </form>
-              <div class="social-info">
-                <a class="facebook" href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>
-                <a class="twitter" href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a>
-                <a class="google-plus" href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a>
-                <a class="instagram" href="#"><i aria-hidden="true" class="fa fa-instagram"></i></a>
-                <a class="youtube" href="#"><i aria-hidden="true" class="fa fa-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
