@@ -21,76 +21,119 @@
     <div class="loader"></div>
   </div>
   <!-- Navbar -->
-  <header class="header-area z-50">
-    <div class="main-header-area">
-      <div class="classy-nav-container breakpoint-off">
-        <div class="container">
-          <nav class="classy-navbar justify-content-between" id="hamiNav">
-            <a class="nav-brand w-1/5 lg:w-[8%]" href="index.html"><img alt=""
-                src="./img\logo\Magna-Hire-White-Normal.png" /></a>
-            <div class="classy-navbar-toggler">
-              <span class="navbarToggler"><span></span><span></span><span></span></span>
-            </div>
-            <div class="classy-menu">
-              <div class="classycloseIcon">
-                <div class="cross-wrap">
-                  <span class="top"></span><span class="bottom"></span>
-                </div>
-              </div>
-              <div class="classynav">
-                <ul id="nav">
-                  <li><a href="./index.html">Home</a></li>
-                  <li><a href="./company.html">Company</a></li>
-                  <li class="active"><a href="./college.html">College</a></li>
-                  <li><a href="./about.html">About Us</a></li>
-                  <li><a href="./contact.html">Contact Us</a></li>
-                </ul>
-                <div class="live-chat-btn ml-5 mt-4 mt-lg-0 ml-md-4">
-                  <a class="btn hami-btn live--chat--btn" href="#"><i aria-hidden="true" class="fa fa-comments"></i>
-                    Live
-                    Chat</a>
-                </div>
+  <header>
+    <div class="classy-nav-container breakpoint-off">
+      <div class="container">
+        <nav class="classy-navbar justify-content-between" id="hamiNav">
+          <a class="nav-brand w-1/5 lg:w-[8%]" href="index.html"><img alt=""
+              src="./img\logo\Magna-Hire-Normal.png" /></a>
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+          <div class="classy-menu">
+            <div class="classycloseIcon">
+              <div class="cross-wrap">
+                <span class="top"></span><span class="bottom"></span>
               </div>
             </div>
-          </nav>
-        </div>
+            <div class="classynav">
+              <ul id="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./company.html">Company</a></li>
+                <li class="active"><a href="./college.html">College</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+              </ul>
+              <div class="mt-4 ml-5 live-chat-btn mt-lg-0 ml-md-4">
+                <a class="btn hami-btn live--chat--btn" href="#"><i aria-hidden="true" class="fa fa-comments"></i>
+                  Live
+                  Chat</a>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
   </header>
-  <!-- Image Header -->
-  <div
-    style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; width: 100%; height: 300px;"
-    width="100%" height="300px" class="relative mb-12 flex items-center" alt="">
-    <div style="background-color: #00000070;" class="absolute top-0 left-0 bottom-0 right-0 z-10"></div>
-    <div class="container text-6xl text-white z-20">For Colleges</div>
-  </div>
-  <!-- Unlock Promising Careers For Your Students -->
-  <section class="py-24 container">
-    <div class="row">
-      <div class="col-12">
-        <div class="section-heading text-center">
-          <h2>Unlock Promising Careers For Your Students</h2>
-          <p>Link your students and alumni to global opportunities with our job placement services - at no cost to you!
-          </p>
-          <a href="#" class="btn hami-btn hover:outline hover:outline-1 mt-10">Boost Your Placements Now
-          </a>
+  <!-- Hero Section -->
+  <section class="flex flex-col bg-magna-secondary">
+    <div class="container flex items-center justify-between mx-auto pt-18 xl:pt-18 xl:pb-20">
+      <div class="flex-1">
+        <h1 class="mb-8 text-6xl" data-animation="fadeInUpBig" data-delay="200ms" data-duration="1s">
+          Unlock Promising Careers For Your Students
+        </h1>
+        <p class="mb-8 text-lg text-black" data-animation="fadeInUpBig" data-delay="400ms" data-duration="1s">
+          Link your students and alumni to global opportunities with our job placement services - at no cost to you!
+        </p>
+        <div class="absolute z-10 mt-2 mb-10 max-md:flex max-md:flex-col max-md:items-start max-md:gap-4">
+          <a class="btn hami-btn hover:outline hover:outline-1" data-animation="fadeInUpBig" data-delay="800ms"
+            data-duration="1s" href="#">Boost Your Placements Now</a>
         </div>
       </div>
+      <div class="flex-1 max-lg:hidden">
+        <img class="ml-auto" width="600px" alt="Girl working on a laptop Illustration"
+          src="img/hero-placeholder/hero-illustration.png" />
+      </div>
+    </div>
   </section>
   <!-- Why partner with us to maximize success for students -->
   <section class="py-24 bg-blue-500">
     <div class="row">
       <div class="col-12">
-        <div class="section-heading text-center">
+        <div class="text-center section-heading">
           <h2 class="text-white">Why partner with us to maximize success for students</h2>
         </div>
       </div>
     </div>
-    <div class="md:flex justify-center gap-10 container">
+    <div class="container flex justify-center gap-10 max-md:flex-col">
+      <div class="w-1/2 max-md:w-full">
+        <div class="p-4 mb-6 bg-white border rounded-lg">
+          <h3 class="text-xl text-black">
+            Connect to #1 Companies
+          </h3>
+          <p class="text-black">
+            Your placement cell can access opportunities from an ever-growing pool of exclusive global partners and
+            successful
+            startups.
+          </p>
+        </div>
+        <div class="p-4 mb-6 bg-white border rounded-lg">
+          <h3 class="text-xl text-black">
+            Access Diverse Roles
+          </h3>
+          <p class="text-black">
+            With a focus on engineering, management, design, and more, we help your students find both internship and
+            job
+            opportunities.
+          </p>
+        </div>
+      </div>
+      <div class="w-1/2 max-md:w-full">
+        <div class="p-4 mb-6 bg-white border rounded-lg">
+          <h3 class="text-xl text-black">
+            No Charges Incurred
+          </h3>
+          <p class="text-black">
+            We don&apos;t function like other graduate recruitment agencies. Our services are completely free for
+            colleges and students.
+          </p>
+        </div>
+        <div class="p-4 mb-6 bg-white border rounded-lg">
+          <h3 class="text-xl text-black">
+            Data Privacy
+          </h3>
+          <p class="text-black">
+            Your data is safe with us! We guarantee complete privacy of sensitive or personal data with robust cyber
+            protection.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container justify-center gap-10 md:flex">
       <div class="md:w-1/2">
         <div class="mb-6">
           <h3 class="text-xl text-white">
-            <i class="fa-solid fa-check text-white"></i>&nbsp;Connect to #1 Companies
+            <i class="text-white fa-solid fa-check"></i>&nbsp;Connect to #1 Companies
           </h3>
           <p class="text-white">
             Your placement cell can access opportunities from an ever-growing pool of exclusive global partners and
@@ -101,7 +144,7 @@
         </div>
         <div class="mb-6">
           <h3 class="text-xl text-white">
-            <i class="fa-solid fa-check text-white"></i>&nbsp;No Charges Incurred
+            <i class="text-white fa-solid fa-check"></i>&nbsp;No Charges Incurred
           </h3>
           <p class="text-white">
             We don’t function like other graduate recruitment agencies. Our services are completely free for colleges
@@ -112,7 +155,7 @@
       <div class="md:w-1/2">
         <div class="mb-6">
           <h3 class="text-xl text-white">
-            <i class="fa-solid fa-check text-white"></i>&nbsp;Access Diverse Roles
+            <i class="text-white fa-solid fa-check"></i>&nbsp;Access Diverse Roles
           </h3>
           <p class="text-white">
             With a focus on engineering, management, design, and more, we help your students find both internship and
@@ -122,7 +165,7 @@
         </div>
         <div class="mb-6">
           <h3 class="text-xl text-white">
-            <i class="fa-solid fa-check text-white"></i>&nbsp;Data Privacy
+            <i class="text-white fa-solid fa-check"></i>&nbsp;Data Privacy
           </h3>
           <p class="text-white">
             Your data is safe with us! We guarantee complete privacy of sensitive or personal data with robust cyber
@@ -130,13 +173,13 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
   <!-- Brands -->
-  <section class="w-full py-24 bg-blue-500 mt-24">
+  <section class="w-full py-24 mt-24 bg-blue-500">
     <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
       <div class="space-y-3">
-        <h2 class="text-white text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Institutes That Choose Us To
+        <h2 class="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl">Institutes That Choose Us To
           Build Brighter Futures</h2>
       </div>
       <div
@@ -157,23 +200,23 @@
   <!-- Testimonials -->
   <section class="mb-24">
     <div
-      class="relative max-w-screen-xl mt-24 px-8 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 sm:rounded-lg shadow-lg">
-      <div class="absolute right-0 bottom-0 hero-pattern w-64 h-56"></div>
+      class="relative max-w-screen-xl px-8 py-16 mx-auto mt-24 text-gray-900 bg-gray-100 shadow-lg md:px-12 lg:px-16 xl:px-32 sm:rounded-lg">
+      <div class="absolute bottom-0 right-0 w-64 h-56 hero-pattern"></div>
       <div class="relative">
         <div>
-          <h2 class="text-center text-gray-800 text-4xl lg:text-5xl font-bold leading-tight">
+          <h2 class="text-4xl font-bold leading-tight text-center text-gray-800 lg:text-5xl">
             100+ Job Matches Made Last Year.
           </h2>
-          <div class="my-4 mx-auto w-12 h-2 border-4 border-indigo-500"></div>
-          <div class="text-center text-gray-700 font-light">
+          <div class="w-12 h-2 mx-auto my-4 border-4 border-indigo-500"></div>
+          <div class="font-light text-center text-gray-700">
             Here's What They Have To Share ...
           </div>
         </div>
         <div class="flex gap-8 max-md:flex-col max-md:gap-4">
           <div
-            class="relative mx-auto mt-8 rounded-lg shadow max-w-sm p-10 bg-gray-100 text-gray-700 leading-snug flex flex-col justify-between">
+            class="relative flex flex-col justify-between max-w-sm p-10 mx-auto mt-8 leading-snug text-gray-700 bg-gray-100 rounded-lg shadow">
             <div class="-ml-4">
-              <svg class="w-8 opacity-25 text-indigo-500" xmlns="http://www.w3.org/2000/svg"
+              <svg class="w-8 text-indigo-500 opacity-25" xmlns="http://www.w3.org/2000/svg"
                 shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                 image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"
                 fill="currentColor">
@@ -188,15 +231,15 @@
               and not getting done. My brain was tired
             </div>
             <div>
-              <div class="mx-auto w-full border border-gray-300 my-8"></div>
+              <div class="w-full mx-auto my-8 border border-gray-300"></div>
               <div class="flex items-center">
                 <div>
-                  <img class="w-12 h-12 rounded-full border-2 border-indigo-400"
+                  <img class="w-12 h-12 border-2 border-indigo-400 rounded-full"
                     src="https://avatars2.githubusercontent.com/u/2741?s=64&v=4" />
                 </div>
                 <div class="ml-4">
                   <div class="font-bold">David H. Hansson</div>
-                  <div class="text-sm text-gray-600 mt-1">
+                  <div class="mt-1 text-sm text-gray-600">
                     CTO,
                     <a href="https://timerse.com/7-steps-to-boost-your-metabolism/">Boosting Metabolism</a>
                   </div>
@@ -205,9 +248,9 @@
             </div>
           </div>
           <div
-            class="mx-auto mt-8 rounded-lg shadow max-w-sm p-10 bg-gray-100 text-gray-700 leading-snug flex flex-col justify-between">
+            class="flex flex-col justify-between max-w-sm p-10 mx-auto mt-8 leading-snug text-gray-700 bg-gray-100 rounded-lg shadow">
             <div class="-ml-4">
-              <svg class="w-8 opacity-25 text-indigo-500" xmlns="http://www.w3.org/2000/svg"
+              <svg class="w-8 text-indigo-500 opacity-25" xmlns="http://www.w3.org/2000/svg"
                 shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                 image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"
                 fill="currentColor">
@@ -222,15 +265,15 @@
               and not getting done. My brain was tired
             </div>
             <div>
-              <div class="mx-auto w-full border border-gray-300 my-8"></div>
+              <div class="w-full mx-auto my-8 border border-gray-300"></div>
               <div class="flex items-center">
                 <div>
-                  <img class="w-12 h-12 rounded-full border-2 border-indigo-400"
+                  <img class="w-12 h-12 border-2 border-indigo-400 rounded-full"
                     src="https://avatars0.githubusercontent.com/u/810438?s=100" />
                 </div>
                 <div class="ml-4">
                   <div class="font-bold">Dan Abramov</div>
-                  <div class="text-sm text-gray-600 mt-1">
+                  <div class="mt-1 text-sm text-gray-600">
                     Creator, <a href="https://swift.org/">Java</a>
                   </div>
                 </div>
@@ -238,9 +281,9 @@
             </div>
           </div>
           <div
-            class="mx-auto mt-8 rounded-lg shadow max-w-sm p-10 bg-gray-100 text-gray-700 leading-snug flex flex-col justify-between">
+            class="flex flex-col justify-between max-w-sm p-10 mx-auto mt-8 leading-snug text-gray-700 bg-gray-100 rounded-lg shadow">
             <div class="-ml-4">
-              <svg class="w-8 opacity-25 text-indigo-500" xmlns="http://www.w3.org/2000/svg"
+              <svg class="w-8 text-indigo-500 opacity-25" xmlns="http://www.w3.org/2000/svg"
                 shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                 image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640"
                 fill="currentColor">
@@ -255,15 +298,15 @@
               and not getting done. My brain was tired
             </div>
             <div>
-              <div class="mx-auto w-full border border-gray-300 my-8"></div>
+              <div class="w-full mx-auto my-8 border border-gray-300"></div>
               <div class="flex items-center">
                 <div>
-                  <img class="w-12 h-12 rounded-full border-2 border-indigo-400"
+                  <img class="w-12 h-12 border-2 border-indigo-400 rounded-full"
                     src="https://avatars0.githubusercontent.com/u/810438?s=100" />
                 </div>
                 <div class="ml-4">
                   <div class="font-bold">Dan Abramov</div>
-                  <div class="text-sm text-gray-600 mt-1">
+                  <div class="mt-1 text-sm text-gray-600">
                     Creator, <a href="https://swift.org/">Java</a>
                   </div>
                 </div>
@@ -275,17 +318,17 @@
     </div>
   </section>
   <!-- Call to Action -->
-  <section class="w-full py-12 md:py-24 lg:py-32 bg-blue-500">
-    <div class="container grid items-center gap-4 px-4 md:px-6">
-      <div class="space-y-3">
-        <h2 class="text-white text-3xl font-bold tracking-tighter md:text-4xl/tight">
+  <section class="w-full py-12 bg-blue-500">
+    <div class="container items-center justify-between gap-4 px-4 sm:flex md:px-6">
+      <div class="max-sm:mb-4">
+        <h2 class="text-3xl font-bold tracking-tighter text-white md:text-4xl/tight">
           Our Promise
         </h2>
         <p class="text-white max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
           Minimizing your hiring burden, maximizing quality hires.
         </p>
       </div>
-      <div class="flex flex-col gap-2 min-[400px]:flex-row">
+      <div class="">
         <button class="btn hami-btn btn-2 hover:outline hover:outline-1" data-animation="fadeInUpBig" data-delay="800ms"
           data-duration="1s" href="#">
           Schedule A Call
@@ -294,58 +337,12 @@
     </div>
   </section>
   <!-- Footer -->
-  <div class="footer-area section-padding-80-0 mb-14">
-    <div class="main-footer-area">
-      <div class="container">
-        <div class="flex justify-center">
-          <div class="w-1/4">
-            <div class="single-footer-widget ">
-              <h5 class="widget-title">Pages</h5>
-              <ul class="footer-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">For Companies</a></li>
-                <li><a href="#">For colleges</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-1/4">
-            <div class="single-footer-widget ">
-              <h5 class="widget-title">Address</h5>
-              <ul class="footer-nav">
-                <li>XYZ Company</li>
-                <li>XYZ Road</li>
-                <li>India</li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-1/4">
-            <div class="single-footer-widget ">
-              <h5 class="widget-title">Subscribe Newsletter</h5>
-              <p>
-                Subscribe to our email newsletter for useful tips and valuable
-                resources.
-              </p>
-              <form action="index.html" class="nl-form">
-                <input class="form-control" placeholder="Your Mail" type="email" />
-                <button type="submit">
-                  <i aria-hidden="true" class="fa fa-paper-plane"></i>
-                </button>
-              </form>
-              <div class="social-info">
-                <a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <footer class="footer-area section-padding-80-0 mb-14 sm:flex justify-center items-center gap-20">
+    <div>
+      <img src="./img/logo/Magna-Hire-Normal.png" width="150px" class="mx-auto" alt="brand logo">
     </div>
-  </div>
+    <h1 class="text-2xl text-center max-sm:mt-5">&copy; Magna Hire - 2024</h1>
+  </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

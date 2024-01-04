@@ -13,7 +13,6 @@ Version: 1.0.0
 @import url(bootstrap.min.css);
 @import url(animate.css);
 @import url(default-assets/classy-nav.css);
-/* @import url(owl.carousel.min.css); */
 @import url(magnific-popup.css);
 @import url(font-awesome.min.css);
 
@@ -25,6 +24,30 @@ Version: 1.0.0
   border-color: #a020f0 !important;
   outline-color: #a020f0 !important;
 }
+.border-indigo-500 {
+  border-color: #a020f0 !important;
+}
+/* Normal state */
+.hover\:bg-blue-500 {
+  background-color: #a020f0;
+  color: #ffffff !important;
+}
+
+.magna-purple {
+  color: #a020f0 !important;
+}
+.bg-magna {
+  background-color: #a020f0;
+}
+.bg-magna-secondary {
+  background-color: #a020f030;
+}
+
+/* Hover state */
+.hover\:bg-blue-500:hover {
+  background-color: #fff !important;
+  color: #a020f0 !important;
+}
 
 * {
   margin: 0;
@@ -32,7 +55,7 @@ Version: 1.0.0
 }
 
 body {
-  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   position: relative;
@@ -45,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #303030;
   line-height: 1.3;
   font-weight: 500;
@@ -117,7 +140,7 @@ ul li {
 .jarallax > .jarallax-img {
   position: absolute;
   object-fit: cover;
-  font-family: "object-fit: cover";
+  font-family: "Roboto", sans-serif;
   top: 0;
   left: 0;
   width: 100%;
@@ -690,7 +713,7 @@ input:focus {
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
-  height: 100px;
+  height: 70px;
   padding: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -712,7 +735,7 @@ input:focus {
 .classy-nav-container .classy-navbar .classynav ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #a020f0;
   font-weight: 500;
   padding: 0 20px;
 }
@@ -797,7 +820,7 @@ input:focus {
 .classynav ul li.active a::before {
   width: 80%;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #a020f0;
   position: absolute;
   bottom: 0;
   left: 10%;
@@ -834,7 +857,7 @@ input:focus {
 }
 
 .classy-navbar-toggler .navbarToggler span {
-  background-color: #ffffff;
+  background-color: #a020f0;
 }
 
 /* :: 8.0 Hero CSS */
@@ -866,7 +889,7 @@ input:focus {
   z-index: 2;
   width: 100%;
   height: 800px;
-  background-color: #a020f0;
+  /* background-color: #a020f0; */
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-welcome-slide {
@@ -1003,8 +1026,8 @@ input:focus {
 .single-footer-widget .social-info a.twitter {
   background-color: #03baeb;
 }
-.single-footer-widget .social-info a.google-plus {
-  background-color: #cb242e;
+.single-footer-widget .social-info a.linkedin {
+  background-color: #4b62b3;
 }
 .single-footer-widget .social-info a.instagram {
   background-color: #057ad7;
@@ -2990,7 +3013,7 @@ input:focus {
 }
 .breadcrumb-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   content: "\f105";
-  font-family: "FontAwesome";
+  font-family: "Roboto", sans-serif;
 }
 
 /* :: 16.0 About CSS */
