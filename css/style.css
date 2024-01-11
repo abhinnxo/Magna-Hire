@@ -48,6 +48,34 @@ Version: 1.0.0
   color: #a020f0 !important;
 }
 
+/* Brands sliding animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * 16));
+  }
+}
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  gap: 10px;
+  width: calc(100px * 32 + 150px);
+}
+.slider .slide {
+  height: 100px;
+  width: 100px;
+}
+
+
 * {
   margin: 0;
   padding: 0;
