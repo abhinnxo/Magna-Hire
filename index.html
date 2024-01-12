@@ -65,10 +65,10 @@
           to optimize associate-level hiring, bringing you the best candidates hassle-free.
         </p>
         <div class="absolute mt-2 mb-10 max-md:flex max-md:flex-col max-md:items-start max-md:gap-4">
-          <a class="btn hami-btn hover:outline hover:outline-1 " data-animation="fadeInUpBig" data-delay="800ms"
-            data-duration="1s" href="https://forms.gle/SajLzHvvGhiLXuji9" target="_blank">Talk to an Expert</a>
-          <a class="btn hami-btn btn-2  outline outline-1 md:ml-4" data-animation="fadeInUpBig" data-delay="800ms"
+          <a class="btn hami-btn btn-2  outline outline-1" data-animation="fadeInUpBig" data-delay="800ms"
             data-duration="1s" href="./company.html">How We Transform Your TA</a>
+          <a class="btn hami-btn hover:outline hover:outline-1 md:ml-4" data-animation="fadeInUpBig" data-delay="800ms"
+            data-duration="1s" href="https://forms.gle/SajLzHvvGhiLXuji9" target="_blank">Talk to an Expert</a>
         </div>
       </div>
       <div class="flex-1 max-lg:hidden">
@@ -117,10 +117,10 @@
   </div>
   </div>
   <!-- Brands -->
-  <section class="w-full bg-blue-500 py-14 max-2xl:py-8 max-lg:mt-10">
+  <section class="w-full py-14 max-2xl:py-8 max-lg:mt-10">
     <div class="container">
       <div class="mb-10 text-center">
-        <h1 class="text-3xl text-white">
+        <h1 class="text-4xl">
           Building Success Stories with Brands That Rely on Us
         </h1>
       </div>
@@ -513,17 +513,16 @@
     let interval = 4000;
     let hasRunOnce = false;
 
-            
             let heroStartValue = 0;
             let heroEndValue = parseInt(heroNum.getAttribute("data-val"));
 
             let heroCounter = setInterval(function () {
-              heroStartValue += 1;
+              heroStartValue += 5;
               heroNum.textContent = heroStartValue;
               if (heroStartValue == heroEndValue) {
                 clearInterval(heroCounter);
               }
-            }, 50);
+            }, 100);
         
     function handleIntersection(entries, observer) {
     
