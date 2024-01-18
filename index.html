@@ -16,13 +16,20 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <div id="preloader">
     <div class="loader"></div>
   </div>
+  <!-- Info Ribbon -->
+  <section id="inforibbon" class="bg-magna flex justify-center items-center gap-4 py-1.5">
+    <p class="text-white">Land Your Dream Job with Magna Hire</p>
+    <p class="text-white font-normal underline" data-animation="fadeInUpBig" data-delay="800ms"
+    data-duration="1s" href="./company.html"><a href="https://forms.gle/ht1ZyyggE8KpQbs87" class="font-normal hover:text-gray-200 hover:font-normal" target="_blank">Learn More <i class="fa-solid fa-arrow-right -rotate-45"></i></a></p>
+    <p id="inforibbonclose" class="absolute right-4 cursor-pointer"><i class="fa-solid fa-x font-light text-white"></i></p>
+  </section>
   <!-- Navbar -->
   <header>
     <div class="classy-nav-container breakpoint-off">
@@ -74,7 +81,8 @@
       </div>
       <div class="flex-1 max-lg:hidden">
         <img class="ml-auto" width="600px" alt="Girl working on a laptop Illustration"
-          src="img/hero-placeholder/hero-illustration.png" />
+          src="img/hero-placeholder/hero-illustration.png" 
+          />
       </div>
     </div>
   </section>
@@ -488,7 +496,6 @@
 
   <!-- Numbers -->
   <script>
-
     let heroNum = document.querySelector(".num-70");
     let interval = 4000;
     let hasRunOnce = false;
@@ -535,6 +542,17 @@
     const observer = new IntersectionObserver(handleIntersection);
     const targetDiv = document.querySelector('.numbers');
     observer.observe(targetDiv);
+  
+  </script>
+  <!-- Hide Info Ribbon -->
+  <script>
+    const rib = document.getElementById("inforibbon")
+    const close = document.getElementById("inforibbonclose")
+
+    close.addEventListener("click", () => {
+      rib.style.display = "none"
+      console.log("clicked");
+    })
   </script>
   <!--Start of Tawk.to Script-->
   <!-- <script type="text/javascript">
