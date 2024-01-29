@@ -10,18 +10,31 @@
   <meta name="description" content="Magna Hire">
   <meta name="keywords" content="magna hire, magna, hire">
   <link href="./img/favicon.png" rel="icon" />
+  <link href="/img/favicon-dark-bg.ico" rel="icon" media="(prefers-color-scheme: dark)">
   <link href="css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <div id="preloader">
     <div class="loader"></div>
   </div>
+  <!-- Info Ribbon -->
+  <section id="inforibbon" class="bg-magna flex justify-center items-center gap-4 py-3">
+    <p class="text-white">Land Your Dream Job with Magna Hire</p>
+    <p class="text-white font-semibold underline" data-animation="fadeInUpBig" data-delay="800ms" data-duration="1s"
+      href="./company.html"><a href="https://forms.gle/ht1ZyyggE8KpQbs87"
+        class="font-semibold hover:text-gray-200 hover:font-normal magna-purple bg-white rounded-2xl px-3.5 py-2"
+        target="_blank">Apply Now <i class="fa-solid fa-arrow-right -rotate-45"></i></a></p>
+    <p id="inforibbonclose" class="absolute right-4 cursor-pointer"><i class="fa-solid fa-x font-bold text-white"></i>
+    </p>
+  </section>
   <!-- Navbar -->
   <header>
     <div class="classy-nav-container breakpoint-off">
@@ -46,11 +59,6 @@
                 <li><a href="./about.html">About Us</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
               </ul>
-              <div class="mt-4 ml-5 live-chat-btn mt-lg-0 ml-md-4">
-                <a class="btn hami-btn live--chat--btn" href="#"><i aria-hidden="true" class="fa fa-comments"></i>
-                  Live
-                  Chat</a>
-              </div>
             </div>
           </div>
         </nav>
@@ -58,21 +66,22 @@
     </div>
   </header>
   <!-- Hero Section -->
-  <section class="flex flex-col bg-magna-secondary max-md:pb-24 max-lg:py-12">
-    <div class="container flex items-center justify-between mx-auto pt-18 xl:pt-18 pb-20 max-md:pt-12">
+  <section class="flex flex-col bg-magna-secondary">
+    <div
+      class="container flex items-center justify-between mx-auto pt-18 xl:pt-18 pb-20 max-lg:pb-24 max-lg:pt-10 max-md:pb-40">
       <div class="flex-1">
         <h1 class="mb-8 text-6xl" data-animation="fadeInUpBig" data-delay="200ms" data-duration="1s">
-          Cut Your Hiring Efforts by <span style="font-weight:bolder">70% </span>
+          Cut Your Hiring Efforts By <span class="font-bold"><span class="num-70" data-val="70">0</span>%</span>
         </h1>
         <p class="mb-8 text-lg text-black" data-animation="fadeInUpBig" data-delay="400ms" data-duration="1s">
           We are a global recruitment company leveraging AI and over a decade of expertise
           to optimize associate-level hiring, bringing you the best candidates hassle-free.
         </p>
-        <div class="absolute mt-2 mb-10 max-md:flex max-md:flex-col max-md:items-start max-md:gap-4">
-          <a class="btn hami-btn hover:outline hover:outline-1" data-animation="fadeInUpBig" data-delay="800ms"
-            data-duration="1s" href="#">How We Transform Your TA</a>
-          <a class="btn hami-btn btn-2 outline outline-1 md:ml-4" data-animation="fadeInUpBig" data-delay="800ms"
-            data-duration="1s" href="#">Talk to an Expert</a>
+        <div class="absolute mt-2 max-md:flex max-md:flex-col max-md:items-start max-md:gap-4">
+          <a class="btn hami-btn btn-2  outline outline-1" data-animation="fadeInUpBig" data-delay="800ms"
+            data-duration="1s" href="./company.html">How We Transform Your TA</a>
+          <a class="btn hami-btn hover:outline hover:outline-1 md:ml-4" data-animation="fadeInUpBig" data-delay="800ms"
+            data-duration="1s" href="https://forms.gle/SajLzHvvGhiLXuji9" target="_blank">Talk to an Expert</a>
         </div>
       </div>
       <div class="flex-1 max-lg:hidden">
@@ -83,72 +92,161 @@
   </section>
   <!-- Numbers -->
   <div class="container mt-12">
-    <h1 class="mb-4 text-2xl font-bold">Let Our Numbers Do The Talking</h1>
+    <h1 class="mb-4 text-2xl font-bold">Let our numbers do the talking</h1>
     <div class="grid grid-cols-2 gap-2 mb-8 md:grid-cols-4">
-      <div class="flex flex-col" data-v0-t="card">
-        <div class="flex flex-col space-y-1.5 p-2">
-          <h3 class="text-4xl font-semibold leading-none tracking-tight text-black count1">
+      <div class="flex flex-col justify-center" data-v0-t="card">
+        <div class="flex flex-col space-y-1.5 p-2 numbers">
+          <h3 class="text-4xl font-semibold leading-none tracking-tight text-black count1 text-center">
             <span class="num" data-val="500">0</span>K+
           </h3>
-          <p class="text-sm text-black text-muted-foreground">quality candidates</p>
+          <p class="text-sm text-black text-muted-foreground text-center">quality candidates</p>
         </div>
       </div>
       <div class="flex flex-col" data-v0-t="card">
         <div class="flex flex-col space-y-1.5 p-2">
-          <h3 class="text-4xl font-semibold leading-none tracking-tight text-black">
-            <span class="num" data-val="35"></span>+
+          <h3 class="text-4xl font-semibold leading-none tracking-tight text-black text-center">
+            <span class="num" data-val="35">0</span>+
           </h3>
-          <p class="text-sm text-black text-muted-foreground">university partners</p>
+          <p class="text-sm text-black text-muted-foreground text-center">university partners</p>
         </div>
       </div>
       <div class="flex flex-col" data-v0-t="card">
         <div class="flex flex-col space-y-1.5 p-2">
-          <h3 class="text-4xl font-semibold leading-none tracking-tight text-black">
+          <h3 class="text-4xl font-semibold leading-none tracking-tight text-black text-center">
             <span class="num" data-val="25">0</span>+
           </h3>
-          <p class="text-sm text-black text-muted-foreground">companies and counting</p>
+          <p class="text-sm text-black text-muted-foreground text-center">companies and counting</p>
         </div>
       </div>
       <div class="flex flex-col" data-v0-t="card">
         <div class="flex flex-col space-y-1.5 p-2">
-          <h3 class="text-4xl font-semibold leading-none tracking-tight text-black">
+          <h3 class="text-4xl font-semibold leading-none tracking-tight text-black text-center">
             <span class="num" data-val="100">0</span>+
           </h3>
-          <p class="text-sm text-black text-muted-foreground">job matches in 1 year</p>
+          <p class="text-sm text-black text-muted-foreground text-center">job matches in 1 year</p>
         </div>
       </div>
     </div>
   </div>
+  <div class="container py-2">
+    <hr>
   </div>
   <!-- Brands -->
-  <section class="w-full bg-blue-500 py-14 max-lg:mt-10">
-    <div class="container items-center justify-center gap-4 px-4 lg:flex md:px-6 lg:gap-10">
-      <div class=" max-lg:mb-10">
-        <h1 class="text-3xl text-white max-md:text-center">
-          Building Success Stories with Brands That Rely on Us
+  <section class="w-full py-14 max-2xl:py-8 max-lg:mt-10">
+    <div class="container">
+      <div class="mb-10 text-center">
+        <h1 class="text-4xl">
+          Building success stories with brands that rely on us
         </h1>
       </div>
-      <div
-        class="grid w-full grid-cols-2 lg:grid-cols-5 items-center justify-center gap-8 lg:gap-12 [&amp;>img]:mx-auto">
-        <img src="img\logo\Magna-Hire-White-Normal@3x.svg" width="140" height="70" alt="Logo 1"
-          class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center" />
-        <img src="img\logo\Magna-Hire-White-Normal@3x.svg" width="140" height="70" alt="Logo 2"
-          class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center" />
-        <img src="img\logo\Magna-Hire-White-Normal@3x.svg" width="140" height="70" alt="Logo 3"
-          class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center" />
-        <img src="img\logo\Magna-Hire-White-Normal@3x.svg" width="140" height="70" alt="Logo 4"
-          class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center" />
-        <img src="img\logo\Magna-Hire-White-Normal@3x.svg" width="140" height="70" alt="Logo 5"
-          class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center" />
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="./img/client-images/client-1.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-2.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-3.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-4.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-5.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-6.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-7.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-8.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-9.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-10.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-11.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-12.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-13.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-14.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-15.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-16.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-1.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-2.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-3.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-4.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-5.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-6.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-7.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-8.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-9.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-10.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-11.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-12.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-13.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-14.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-15.webp" height="100px" width="100px" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/client-images/client-16.webp" height="100px" width="100px" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!-- Supercaghrge your Hiring -->
-  <section class="pb-24 pt-16 bg-gray">
+  <section class="pt-16 bg-gray">
     <div class="container">
       <div class="col-12">
         <div class="text-center">
-          <h1 class="text-4xl">Supercharge Your Hiring, One Easy Step At A Time</h1>
+          <h1 class="text-4xl">Supercharge your hiring, one easy step at a time</h1>
           <p class="mt-2 text-2xl">
             Our AI solution is powerful, simple, and surprisingly
             affordable.
@@ -156,13 +254,16 @@
         </div>
       </div>
       <!-- w-1/2 mx-auto -->
-      <div class="justify-between sm:flex">
+      <div class="justify-between lg:flex">
         <div class="">
-          <div class="p-10 m-10 text-center bg-white border rounded-lg ">
-            <div class=" d-flex ">
+          <div class="p-10 m-10 text-justify bg-white border rounded-lg ">
+            <div class="sm:flex items-center gap-6">
+              <div>
+                <img src="./img/supercharge/person.jpg" width="150px" alt=""
+                  class="mx-auto max-sm:w-[75px] max-sm:mb-2">
+              </div>
               <div class="feature-text">
-                <h5>Personal Account Manager</h5>
-                <!-- <img src="./img/logo/Magna-Hire-Black-Normal@3x.svg" alt="img" /> -->
+                <h5 class="magna-purple font-bold text-xl mb-2">Personal Account Manager</h5>
                 <p>
                   We assign a trained recruiter as your personal consultant to
                   understand your requirements and handle requests 24/7.
@@ -170,10 +271,14 @@
               </div>
             </div>
           </div>
-          <div class="p-10 m-10 text-center bg-white border rounded-lg ">
-            <div class=" d-flex ">
+          <div class="p-10 m-10 text-justify bg-white border rounded-lg ">
+            <div class=" sm:flex items-center gap-6 ">
+              <div>
+                <img src="./img/supercharge/persons.png" width="150px" alt=""
+                  class="mx-auto max-sm:w-[75px] max-sm:mb-2">
+              </div>
               <div class="feature-text">
-                <h5>Diverse Sourcing</h5>
+                <h5 class="magna-purple font-bold text-xl mb-2">Diverse Sourcing</h5>
                 <!-- <img src="./img/logo/Magna-Hire-Black-Normal@3x.svg" alt="img" /> -->
                 <p>
                   We access premier student and alumni networks, along with job
@@ -184,10 +289,13 @@
           </div>
         </div>
         <div class="">
-          <div class="p-10 m-10 text-center bg-white border rounded-lg ">
-            <div class=" d-flex ">
+          <div class="p-10 m-10 text-justify bg-white border rounded-lg ">
+            <div class=" sm:flex items-center gap-6 ">
+              <div>
+                <img src="./img/supercharge/robot.png" width="150px" alt="" class="mx-auto max-sm:w-[75px] max-sm:mb-2">
+              </div>
               <div class="feature-text">
-                <h5>AI-Driven Screening</h5>
+                <h5 class="magna-purple font-bold text-xl mb-2">AI-Driven Screening</h5>
                 <!-- <img src="./img/logo/Magna-Hire-Black-Normal@3x.svg" alt="img" /> -->
                 <p>
                   We use the best AI models to screen and rank candidates based
@@ -196,10 +304,14 @@
               </div>
             </div>
           </div>
-          <div class="p-10 m-10 text-center bg-white border rounded-lg ">
-            <div class=" d-flex ">
+          <div class="p-10 m-10 text-justify bg-white border rounded-lg ">
+            <div class=" sm:flex items-center gap-6 ">
+              <div>
+                <img src="./img/supercharge/100.png" width="150px" alt=""
+                  class="mx-auto max-sm:w-[75px] max-sm:mb-2 scale-125">
+              </div>
               <div class="feature-text">
-                <h5>Only The Best</h5>
+                <h5 class="magna-purple font-bold text-xl mb-2">Only The Best</h5>
                 <!-- <img src="./img/logo/Magna-Hire-Black-Normal@3x.svg" alt="img" /> -->
                 <p>
                   Our data-driven process brings you a pre-screened and quality
@@ -211,7 +323,8 @@
         </div>
       </div>
       <div class="flex justify-center mb-8">
-        <a href="#" class="btn hami-btn hover:outline hover:outline-1">Discover More Possibilities With Us
+        <a href="https://forms.gle/SajLzHvvGhiLXuji9" class="btn hami-btn hover:outline hover:outline-1"
+          target="_blank">Discover More Possibilities With Us
         </a>
       </div>
     </div>
@@ -220,63 +333,57 @@
     </div>
   </section>
   <!-- The Magna Hire Difference -->
-  <section class="bg-gray">
+  <section class="bg-gray py-16">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6">
-          <div class="mb-100">
-            <img alt="" src="img\logo\Magna-Hire-Black-Normal.png" />
-          </div>
+      <h1 class="text-4xl pb-5 sm:pb-10 text-center">The Magna Hire Difference</h1>
+      <div class="sm:flex justify-center items-center gap-10">
+        <div class="max-sm:pb-5">
+          <img alt="" src="https://placehold.co/400x320" />
         </div>
-        <div class="col-12 col-md-6">
-          <div class="mb-100">
-            <h1 class="text-4xl pb-5">The Magna Hire Difference</h1>
-            <div class="cta-desc mb-50">
-              <h6 class="text-xl">
-                1. Exclusive talent access from
-                across the nation
-              </h6>
-              <h6 class="text-xl">
-                2. Speedy turnaround and role
-                fulfilment
-              </h6 class="text-xl">
-              <h6 class="text-xl">
-                3. High-quality, pre-vetted
-                candidates
-              </h6 class="text-xl">
-              <h6 class="text-xl">
-                4. Trained professionals own the
-                entire process
-              </h6>
-              <h6 class="text-xl">
-                5. Cost and time effective for
-                employers
-              </h6>
-            </div>
-            <a class="btn hami-btn" href="#">Know How We Do It</a>
-          </div>
+        <div>
+          <h6 class="text-xl mb-2.5">
+            - Exclusive talent access from
+            across the nation
+          </h6>
+          <h6 class="text-xl mb-2.5">
+            - Speedy turnaround and role
+            fulfilment
+          </h6>
+          <h6 class="text-xl mb-2.5">
+            - High-quality, pre-vetted
+            candidates
+          </h6>
+          <h6 class="text-xl mb-2.5">
+            - Trained professionals own the
+            entire process
+          </h6>
+          <h6 class="text-xl mb-2.5">
+            - Cost and time effective for
+            employers
+          </h6>
+          <a class="btn hami-btn hover:outline hover:outline-1 mt-5" href="./company.html">Know How We Do It</a>
         </div>
       </div>
     </div>
   </section>
   <!-- Client Testimonials -->
-  <section>
+  <section class="my-10">
     <div
-      class="relative max-w-screen-xl px-8 py-16 mx-auto mt-12 text-gray-900 shadow-lg md:px-12 lg:px-16 xl:px-32 bg-gray sm:rounded-lg">
+      class="relative container px-8 py-16 mx-auto text-gray-900 bg-gray shadow-lg md:px-12 lg:px-16 xl:px-32 sm:rounded-lg">
       <div class="absolute bottom-0 right-0 w-64 h-56 hero-pattern"></div>
       <div class="relative">
         <div>
-          <h2 class="text-4xl font-bold leading-tight text-center text-gray-800 lg:text-5xl">
-            Testimonials
-          </h2>
+          <h1 class="text-4xl font-bold text-center text-gray-800">
+            100+ job matches made last year
+          </h1>
           <div class="w-12 h-2 mx-auto my-4 border-4 border-indigo-500"></div>
-          <div class="font-light text-center text-gray-700 max-md:mb-8">
-            Here are what some of our amazing clients are saying ...
-          </div>
+          <p class="text-xl text-center text-gray-700">
+            Here's what our clients have to share…
+          </p>
         </div>
         <div class="flex gap-8 max-md:flex-col max-md:gap-4">
           <div
-            class="relative flex flex-col justify-between max-w-sm p-10 mx-auto leading-snug text-gray-700 bg-white rounded-lg shadow md:mt-8">
+            class="relative flex flex-col justify-between max-w-sm p-10 mx-auto mt-8 leading-snug text-gray-700 bg-white rounded-lg shadow">
             <div class="-ml-4">
               <svg class="w-8 text-indigo-500 opacity-25" xmlns="http://www.w3.org/2000/svg"
                 shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
@@ -287,30 +394,33 @@
               </svg>
             </div>
             <div class="mt-2">
-              I felt disorganized. Pieces of paper everywhere. I was
-              constantly making new lists, losing old ones, crossing off items
-              and adding new ones. I was forever worried things were slipping
-              and not getting done. My brain was tired
+              We urgently needed to fill positions within our data engineering team in Berlin, and Magna Hire exceeded
+              our expectations at every step!
+              <br>
+              Akasmat and his team quickly set up a seamless process that connected us with ideal candidates, ensuring
+              that we were involved at every step.
+              <br>
+              What stood out was their adaptability and their commitment to delivering exceptional results but also
+              their keen awareness and alignment with the latest industry requirements.
             </div>
             <div>
               <div class="w-full mx-auto my-8 border border-gray-300"></div>
               <div class="flex items-center">
                 <div>
                   <img class="w-12 h-12 border-2 border-indigo-400 rounded-full"
-                    src="https://avatars2.githubusercontent.com/u/2741?s=64&v=4" />
+                    src="./img/client-test/pramit-dash.jpg" />
                 </div>
                 <div class="ml-4">
-                  <div class="font-bold">David H. Hansson</div>
+                  <div class="font-bold">Pramit Dash </div>
                   <div class="mt-1 text-sm text-gray-600">
-                    CTO,
-                    <a href="https://timerse.com/7-steps-to-boost-your-metabolism/">Boosting Metabolism</a>
+                    Software Engineer, <span class="font-bold">gridX</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="flex flex-col justify-between max-w-sm p-10 mx-auto leading-snug text-gray-700 bg-white rounded-lg shadow md:mt-8">
+            class="flex flex-col justify-between max-w-sm p-10 mx-auto mt-8 leading-snug text-gray-700 bg-white rounded-lg shadow">
             <div class="-ml-4">
               <svg class="w-8 text-indigo-500 opacity-25" xmlns="http://www.w3.org/2000/svg"
                 shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
@@ -343,7 +453,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col justify-between max-w-sm p-10 mx-auto leading-snug text-gray-700 bg-white rounded-lg shadow md:mt-8">
+            class="flex flex-col justify-between max-w-sm p-10 mx-auto mt-8 leading-snug text-gray-700 bg-white rounded-lg shadow">
             <div class="-ml-4">
               <svg class="w-8 text-indigo-500 opacity-25" xmlns="http://www.w3.org/2000/svg"
                 shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
@@ -380,61 +490,107 @@
     </div>
   </section>
   <!-- CTA: Ready To Elevate Your Hiring -->
-  <section class="mt-12 py-10 bg-blue-500">
-    <div class="container">
-      <div class="flex items-center justify-around cta-text max-md:flex-col max-md:items-start">
-        <div class="flex flex-col max-md:mb-8 text-start">
-          <h1 class="text-white text-3xl">Ready To Elevate Your Hiring Process In Just A Few Steps?</h1>
-          <p class="text-white">We will respond in 24 hours</p>
-        </div>
-        <a href="#" class="btn hami-btn btn-2 hover:outline hover:outline-1">Let Us Show You How</a>
+  <section class="w-full py-10 max-2xl:py-5 bg-magna">
+    <div class="container items-center justify-between gap-4 sm:flex">
+      <div class="max-sm:mb-4">
+        <h1 class="text-3xl text-white max-2xl:text-xl max-sm:text-2xl">Ready to simplify your hiring process in just a
+          few steps?</h2>
       </div>
+      <a href="https://calendly.com/akasmat-zca/elevate-your-hiring-process-with-magna-hire"
+        class="btn hami-btn btn-2 hover:outline hover:outline-1" target="_blank">Let Us Show You How</a>
+    </div>
     </div>
   </section>
   <!-- Footer -->
   <footer class="py-2 sm:flex justify-center items-center gap-20">
     <div>
-      <img src="./img/logo/Magna-Hire-Normal.png" width="150px" class="mx-auto" alt="brand logo">
+      <img src="./img/logo/Magna-Hire-Normal.png" width="50px" class="mx-auto" alt="brand logo">
     </div>
-    <h1 class="text-2xl text-center">&copy; Magna Hire - 2024</h1>
+    <h1 class="text-sm max-sm:text-sm text-center">&copy; Mentorverse Private Limited 2024</h1>
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/hami.bundle.js"></script>
   <script src="js/default-assets/active.js"></script>
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag("js", new Date());
-
-    gtag("config", "UA-23581568-13");
-  </script>
   <script crossorigin="anonymous"
     data-cf-beacon='{"rayId":"837d5d5698505460","b":1,"version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
     defer="" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
     src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"></script>
+
+  <!-- Numbers -->
   <script>
-    let valueDisplays = document.querySelectorAll(".num");
+    let heroNum = document.querySelector(".num-70");
     let interval = 4000;
-    valueDisplays.forEach((valueDisplay) => {
-      let startValue = 0;
-      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-      let duration = Math.floor(interval / endValue);
-      let counter = setInterval(function () {
-        startValue += 1;
-        valueDisplay.textContent = startValue;
-        if (startValue == endValue) {
-          clearInterval(counter);
+    let hasRunOnce = false;
+
+    let heroStartValue = 0;
+    let heroEndValue = parseInt(heroNum.getAttribute("data-val"));
+
+    let heroCounter = setInterval(function () {
+      heroStartValue += 5;
+      heroNum.textContent = heroStartValue;
+      if (heroStartValue == heroEndValue) {
+        clearInterval(heroCounter);
+      }
+    }, 100);
+
+    function handleIntersection(entries, observer) {
+
+      let valueDisplays = document.querySelectorAll(".num");
+
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Run your code here when the div is visible
+          console.log('Div is visible!');
+
+          valueDisplays.forEach((valueDisplay) => {
+            if (!hasRunOnce) {
+              let startValue = 0;
+              let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+              let duration = Math.floor(interval / endValue);
+              let counter = setInterval(function () {
+                startValue += 1;
+                valueDisplay.textContent = startValue;
+                if (startValue == endValue) {
+                  clearInterval(counter);
+                }
+              }, duration);
+            }
+          });
+          hasRunOnce = true;
         }
-      }, duration);
-    });
+      });
+    }
+
+    const observer = new IntersectionObserver(handleIntersection);
+    const targetDiv = document.querySelector('.numbers');
+    observer.observe(targetDiv);
+
   </script>
+  <!-- Hide Info Ribbon -->
+  <script>
+    const rib = document.getElementById("inforibbon")
+    const close = document.getElementById("inforibbonclose")
+
+    close.addEventListener("click", () => {
+      rib.style.display = "none"
+      console.log("clicked");
+    })
+  </script>
+  <!--Start of Tawk.to Script-->
+  <!-- <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/659c17460ff6374032bdbf3f/1hjkrlrdg';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script> -->
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>

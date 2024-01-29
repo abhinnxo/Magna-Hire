@@ -9,6 +9,7 @@
   <meta name="description" content="Magna Hire">
   <meta name="keywords" content="magna hire, magna, hire">
   <link href="./img/favicon.png" rel="icon" />
+  <link href="/img/favicon-dark-bg.ico" rel="icon" media="(prefers-color-scheme: dark)">
   <link href="css/style.css" rel="stylesheet" />
   <link href="./img/core-img/favicon.png" rel="icon" />
   <link href="./css/style.css" rel="stylesheet" />
@@ -19,189 +20,87 @@
   <link rel="stylesheet" href="./css/owl.carousel.min.css" />
 </head>
 
-<body>
+<body class="bg-magna-secondary">
   <div id="preloader">
     <div class="loader"></div>
   </div>
   <!-- Navbar -->
-  <header>
-    <div class="classy-nav-container breakpoint-off">
-      <div class="container">
-        <nav class="classy-navbar justify-content-between" id="hamiNav">
-          <a class="nav-brand w-1/5 lg:w-[8%]" href="index.html"><img alt=""
-              src="./img\logo\Magna-Hire-Normal.png" /></a>
-          <div class="classy-navbar-toggler">
-            <span class="navbarToggler"><span></span><span></span><span></span></span>
-          </div>
-          <div class="classy-menu">
-            <div class="classycloseIcon">
-              <div class="cross-wrap">
-                <span class="top"></span><span class="bottom"></span>
-              </div>
-            </div>
-            <div class="classynav">
-              <ul id="nav">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./company.html">Company</a></li>
-                <li><a href="./college.html">College</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li class="active"><a href="./contact.html">Contact Us</a></li>
-              </ul>
-              <div class="live-chat-btn ml-5 mt-4 mt-lg-0 ml-md-4">
-                <a class="btn hami-btn live--chat--btn" href="#"><i aria-hidden="true" class="fa fa-comments"></i>
-                  Live
-                  Chat</a>
-              </div>
+<header class="bg-white">
+  <div class="classy-nav-container breakpoint-off">
+    <div class="container">
+      <nav class="classy-navbar justify-content-between" id="hamiNav">
+        <a class="nav-brand w-1/5 lg:w-[8%]" href="index.html"><img alt=""
+            src="./img\logo\Magna-Hire-Normal.png" /></a>
+        <div class="classy-navbar-toggler">
+          <span class="navbarToggler"><span></span><span></span><span></span></span>
+        </div>
+        <div class="classy-menu z-100">
+          <div class="classycloseIcon">
+            <div class="cross-wrap">
+              <span class="top"></span><span class="bottom"></span>
             </div>
           </div>
-        </nav>
-      </div>
+          <div class="classynav">
+            <ul id="nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./company.html">Company</a></li>
+              <li><a href="./college.html">College</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li class="active"><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
+  </div>
   </header>
   <!-- Form Area -->
   <section>
     <!-- Form 1 -->
-    <div class="bg-magna-secondary py-10">
-      <div class="md:flex justify-center container">
+    <div class="py-10">
+      <div class="md:flex justify-center items-center gap-10 container">
         <div>
-          <h1 class="font-bold text-4xl mb-2 text-black max-w-[600px]">
-            Your next best hire is a few clicks away!
-          </h1>
-          <h2 class="text-2xl mb-4 text-black max-w-[500px]">
-            From 500K+ candidates, we curate a tailored pipeline of quality profiles for you.
+          <h2 class="font-bold text-4xl mb-2.5 text-black max-w-[600px]">
+            Your next best hire!
           </h2>
-          <p class="mb-2 text-xl text-black">- Swift role fulfilment guaranteed</p>
-          <p class="mb-2 text-xl text-black">- Best of AI and tech for accurate screening</p>
-          <p class="mb-2 text-xl text-black">- Dedicated, 24/7 consultant support</p>
-          <p class="mb-2 text-xl text-black">- Complete transparency in processes</p>
-          <p class="mb-2 text-xl text-black">- #1 firm for associate hiring in India</p>
+          <p class="text-xl mb-3 text-black max-w-[450px]">
+            From 500K+ candidates, we curate a tailored pipeline of quality profiles for you.
+          </h6>
+          <p class="mb-2 ml-6 text-black text-xl">- Swift role fulfilment guaranteed</p>
+          <p class="mb-2 ml-6 text-black text-xl">- Best of AI and tech for accurate screening</p>
+          <p class="mb-2 ml-6 text-black text-xl">- Dedicated, 24/7 consultant support</p>
+          <p class="mb-2 ml-6 text-black text-xl">- Complete transparency in processes</p>
+          <p class="mb-2 ml-6 text-black text-xl">- #1 firm for associate hiring in India</p>
         </div>
-        <div>
-          <div class="">
-            <form class="bg-magna-scondary p-4" action="#" method="POST">
-              <h1 class="text-2xl mb-2">For Companies</h1>
-              <label for="name"
-                class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5 bg-white w-[300px]">
-                <input type="text" id="name" placeholder="Enter your Full Name"
-                  class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" />
-                <span
-                  class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
-                  Full Name*
-                </span>
-              </label>
-              <label for="email"
-                class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5 bg-white">
-                <input type="email" id="email" placeholder="Email"
-                  class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" />
-                <span
-                  class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs mb-5">
-                  Email*
-                </span>
-              </label>
-              <label for="phone"
-                class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5 bg-white">
-                <input type="number" id="phone" placeholder=" Phone Number"
-                  class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" />
-                <span
-                  class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
-                  Phone Number*
-                </span>
-              </label>
-              <label for="company"
-                class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5 bg-white">
-                <input type="text" id="company" placeholder="Company Name"
-                  class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" />
-                <span
-                  class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
-                  Company Name*
-                </span>
-              </label>
-              <button class="btn hami-btn hover:outline hover:outline-1" data-animation="fadeInUpBig" data-delay="800ms"
-                data-duration="1s" href="#">Submit</button>
-            </form>
-          </div>
-        </div>
+      <div>
+        <img src="./img/women.svg" alt="women holding a form" width="300px" class="">
+        <a class="btn hami-btn hover:outline hover:outline-1 mt-5" data-animation="fadeInUpBig" data-delay="800ms"
+        data-duration="1s" href="https://docs.google.com/forms/d/e/1FAIpQLScw6_UHftshVM-0JhBm9uNg4-u5FifzCjSNegbWKdoBS_LYsQ/viewform" target="_blank">For Comapnies</a>
+      </div>
       </div>
     </div>
     <!-- Form 2 -->
-    <div class="bg-magna-secondary py-10">
-      <div class="flex max-md:flex-col-reverse justify-center gap-1 md:gap-10 container">
+    <div class="py-10">
+      <div class="flex max-md:flex-col-reverse justify-center items-center gap-10 container">
+        <a class="btn hami-btn hover:outline hover:outline-1" data-animation="fadeInUpBig" data-delay="800ms"
+          data-duration="1s" href="https://forms.gle/qrd4a8nu5omnTAvt9" target="_blank">For Colleges</a>
         <div>
-          <div>
-            <form class="bg-magna-scondary p-4" action="#" method="POST">
-              <h1 class="text-2xl mb-2">For Colleges</h1>
-              <label for="name"
-                class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5 bg-white">
-                <input type="text" id="name" placeholder="Enter your Full Name"
-                  class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" />
-                <span
-                  class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
-                  Full Name*
-                </span>
-              </label>
-              <label for="email"
-                class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5 bg-white">
-                <input type="email" id="email" placeholder="Email"
-                  class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" />
-                <span
-                  class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs mb-5">
-                  Email*
-                </span>
-              </label>
-              <label for="phone"
-                class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5 bg-white">
-                <input type="number" id="phone" placeholder=" Phone Number"
-                  class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" />
-                <span
-                  class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
-                  Phone Number*
-                </span>
-              </label>
-              <label for="company"
-                class="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5 bg-white min-w-[300px]">
-                <input type="text" id="company" placeholder="Company Name"
-                  class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" />
-                <span
-                  class="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs">
-                  Company Name*
-                </span>
-              </label>
-              <button class="btn hami-btn hover:outline hover:outline-1" data-animation="fadeInUpBig" data-delay="800ms"
-                data-duration="1s" href="#">Submit</button>
-            </form>
-          </div>
-        </div>
-        <div>
-          <h1 class="font-bold text-4xl mb-2 text-black max-w-[600px]">
-            Your next best hire is a few clicks away!
-          </h1>
-          <h2 class="text-2xl mb-4 text-black max-w-[500px]">
-            From 500K+ candidates, we curate a tailored pipeline of quality profiles for you.
-          </h2>
-          <p class="mb-2 text-xl text-black">- Swift role fulfilment guaranteed</p>
-          <p class="mb-2 text-xl text-black">- Best of AI and tech for accurate screening</p>
-          <p class="mb-2 text-xl text-black">- Dedicated, 24/7 consultant support</p>
-          <p class="mb-2 text-xl text-black">- Complete transparency in processes</p>
-          <p class="text-xl text-black">- #1 firm for associate hiring in India</p>
+          <h2 class="font-bold text-4xl mb-2.5 text-black max-w-[600px]">
+            Are you a college or university?
+            </h1>
+            <p class="text-xl text-black max-w-[500px]">
+              Find lucrative opportunities for your students, from internships for undergraduates to full-time jobs for
+              freshers and alumni - all for free!
+            </p>
         </div>
       </div>
     </div>
-  </section>
   </section>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/hami.bundle.js"></script>
   <script src="js/default-assets/active.js"></script>
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-23581568-13");
-  </script>
   <script crossorigin="anonymous"
     data-cf-beacon='{"rayId":"838e4cdb3cc3550b","b":1,"version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
     defer="" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
