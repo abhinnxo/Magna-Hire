@@ -770,6 +770,7 @@ input:focus {
   color: #a020f0;
   font-weight: 500;
   padding: 0 20px;
+  border-radius: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .classy-nav-container .classy-navbar .classynav ul li a {
@@ -790,6 +791,7 @@ input:focus {
   .classy-nav-container .classy-navbar .classynav ul li a {
     font-size: 14px;
     color: #303030;
+    margin: 10px 1rem;
   }
   .classy-nav-container .classy-navbar .classynav ul li a:hover,
   .classy-nav-container .classy-navbar .classynav ul li a:focus {
