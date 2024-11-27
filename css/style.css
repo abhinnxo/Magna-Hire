@@ -4162,3 +4162,14 @@ input:focus {
   height: 150px;
   padding: 20px;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.video-container iframe {
+  max-width: 100%;
+  width: 560px;
+  height: 315px;
+}
